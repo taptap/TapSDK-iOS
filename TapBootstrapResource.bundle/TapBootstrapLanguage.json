@@ -1,0 +1,26 @@
+{
+    "zh_hans":{
+        "logout_title":"退出登录",
+        "logout_content":"确定要退出当前账号吗？",
+        "logout_confirm":"确认",
+        "logout_cancel":"取消",
+        "copy_success":"复制成功",
+        "guest_name":"试玩用户",
+        "guest_id":"试玩 ID: %@",
+        "network_error_click_retry":"网络异常，点击重试",
+        "entry_moment":"动态",
+        "entry_friend":"好友"
+    },
+    "en":{
+        "logout_title":"Log out",
+        "logout_content":"Are you sure to log out of this account?",
+        "logout_confirm":"Confirm",
+        "logout_cancel":"Cancel",
+        "copy_success":"Copied",
+        "guest_name":"Guest Player",
+        "guest_id":"Guest ID: %@",
+        "network_error_click_retry":"Network error, click to retry",
+        "entry_moment":"Moments",
+        "entry_friend":"Friends"
+    }
+}

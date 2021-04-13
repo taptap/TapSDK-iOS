@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBCA2888262546F900B93C3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCA2887262546F900B93C3E /* AppDelegate.m */; };
+		DBCA288B262546F900B93C3E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCA288A262546F900B93C3E /* SceneDelegate.m */; };
+		DBCA288E262546F900B93C3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCA288D262546F900B93C3E /* ViewController.m */; };
+		DBCA2891262546F900B93C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCA288F262546F900B93C3E /* Main.storyboard */; };
+		DBCA2894262546F900B93C3E /* TapSDK_iOS_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBCA2892262546F900B93C3E /* TapSDK_iOS_Demo.xcdatamodeld */; };
+		DBCA2896262546FA00B93C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCA2895262546FA00B93C3E /* Assets.xcassets */; };
+		DBCA2899262546FA00B93C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCA2897262546FA00B93C3E /* LaunchScreen.storyboard */; };
+		DBCA289C262546FA00B93C3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCA289B262546FA00B93C3E /* main.m */; };
+		DBCA28B0262547E100B93C3E /* TapBootstrapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28A8262547DF00B93C3E /* TapBootstrapSDK.framework */; };
+		DBCA28B1262547E100B93C3E /* TapMomentResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBCA28A9262547DF00B93C3E /* TapMomentResource.bundle */; };
+		DBCA28B2262547E100B93C3E /* TapCommonResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBCA28AA262547DF00B93C3E /* TapCommonResource.bundle */; };
+		DBCA28B3262547E100B93C3E /* TapBootstrapResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBCA28AB262547DF00B93C3E /* TapBootstrapResource.bundle */; };
+		DBCA28B4262547E100B93C3E /* TapCommonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28AC262547E000B93C3E /* TapCommonSDK.framework */; };
+		DBCA28B5262547E100B93C3E /* TapDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28AD262547E000B93C3E /* TapDB.framework */; };
+		DBCA28B6262547E100B93C3E /* TapLoginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28AE262547E000B93C3E /* TapLoginSDK.framework */; };
+		DBCA28B7262547E100B93C3E /* TapMomentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28AF262547E100B93C3E /* TapMomentSDK.framework */; };
+		DBCA28BB262547F200B93C3E /* TapDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCA28BA262547F200B93C3E /* TapDBViewController.m */; };
+		DBCA28BF262548AB00B93C3E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28BE262548AB00B93C3E /* WebKit.framework */; };
+		DBCA28C12625492400B93C3E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28C02625492400B93C3E /* Security.framework */; };
+		DBCA28C32625493500B93C3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28C22625493500B93C3E /* SystemConfiguration.framework */; };
+		DBCA28C52625493C00B93C3E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28C42625493C00B93C3E /* AVFoundation.framework */; };
+		DBCA28C72625494300B93C3E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28C62625494300B93C3E /* CoreTelephony.framework */; };
+		DBCA28C92625495000B93C3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28C82625495000B93C3E /* MobileCoreServices.framework */; };
+		DBCA28CB2625495700B93C3E /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28CA2625495700B93C3E /* Photos.framework */; };
+		DBCA28CD2625496300B93C3E /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28CC2625496300B93C3E /* AppTrackingTransparency.framework */; };
+		DBCA28CF2625496C00B93C3E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28CE2625496C00B93C3E /* AdSupport.framework */; };
+		DBCA28D12625497400B93C3E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28D02625497400B93C3E /* CoreMotion.framework */; };
+		DBCA28DB26254D4600B93C3E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28D926254CD300B93C3E /* libc++.tbd */; };
+		DBCA28DD26254D5700B93C3E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28D42625498D00B93C3E /* libz.tbd */; };
+		DBCA28DF26254D6200B93C3E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28D32625498700B93C3E /* libsqlite3.0.tbd */; };
+		DBCA28E126254D6D00B93C3E /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA28D22625497D00B93C3E /* libresolv.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DBCA2883262546F900B93C3E /* TapSDK-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapSDK-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBCA2886262546F900B93C3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBCA2887262546F900B93C3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBCA2889262546F900B93C3E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DBCA288A262546F900B93C3E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DBCA288C262546F900B93C3E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DBCA288D262546F900B93C3E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBCA2890262546F900B93C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBCA2893262546F900B93C3E /* TapSDK_iOS_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TapSDK_iOS_Demo.xcdatamodel; sourceTree = "<group>"; };
+		DBCA2895262546FA00B93C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBCA2898262546FA00B93C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBCA289A262546FA00B93C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBCA289B262546FA00B93C3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBCA28A8262547DF00B93C3E /* TapBootstrapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapBootstrapSDK.framework; sourceTree = "<group>"; };
+		DBCA28A9262547DF00B93C3E /* TapMomentResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapMomentResource.bundle; sourceTree = "<group>"; };
+		DBCA28AA262547DF00B93C3E /* TapCommonResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapCommonResource.bundle; sourceTree = "<group>"; };
+		DBCA28AB262547DF00B93C3E /* TapBootstrapResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapBootstrapResource.bundle; sourceTree = "<group>"; };
+		DBCA28AC262547E000B93C3E /* TapCommonSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapCommonSDK.framework; sourceTree = "<group>"; };
+		DBCA28AD262547E000B93C3E /* TapDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapDB.framework; sourceTree = "<group>"; };
+		DBCA28AE262547E000B93C3E /* TapLoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapLoginSDK.framework; sourceTree = "<group>"; };
+		DBCA28AF262547E100B93C3E /* TapMomentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapMomentSDK.framework; sourceTree = "<group>"; };
+		DBCA28B9262547EF00B93C3E /* TapDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapDBViewController.h; sourceTree = "<group>"; };
+		DBCA28BA262547F200B93C3E /* TapDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapDBViewController.m; sourceTree = "<group>"; };
+		DBCA28BE262548AB00B93C3E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DBCA28C02625492400B93C3E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DBCA28C22625493500B93C3E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DBCA28C42625493C00B93C3E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DBCA28C62625494300B93C3E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DBCA28C82625495000B93C3E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DBCA28CA2625495700B93C3E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		DBCA28CC2625496300B93C3E /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		DBCA28CE2625496C00B93C3E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		DBCA28D02625497400B93C3E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DBCA28D22625497D00B93C3E /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		DBCA28D32625498700B93C3E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		DBCA28D42625498D00B93C3E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DBCA28D926254CD300B93C3E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBCA2880262546F900B93C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCA28B5262547E100B93C3E /* TapDB.framework in Frameworks */,
+				DBCA28CD2625496300B93C3E /* AppTrackingTransparency.framework in Frameworks */,
+				DBCA28DB26254D4600B93C3E /* libc++.tbd in Frameworks */,
+				DBCA28E126254D6D00B93C3E /* libresolv.tbd in Frameworks */,
+				DBCA28B6262547E100B93C3E /* TapLoginSDK.framework in Frameworks */,
+				DBCA28C72625494300B93C3E /* CoreTelephony.framework in Frameworks */,
+				DBCA28C52625493C00B93C3E /* AVFoundation.framework in Frameworks */,
+				DBCA28BF262548AB00B93C3E /* WebKit.framework in Frameworks */,
+				DBCA28DD26254D5700B93C3E /* libz.tbd in Frameworks */,
+				DBCA28CB2625495700B93C3E /* Photos.framework in Frameworks */,
+				DBCA28B7262547E100B93C3E /* TapMomentSDK.framework in Frameworks */,
+				DBCA28C12625492400B93C3E /* Security.framework in Frameworks */,
+				DBCA28B4262547E100B93C3E /* TapCommonSDK.framework in Frameworks */,
+				DBCA28C32625493500B93C3E /* SystemConfiguration.framework in Frameworks */,
+				DBCA28C92625495000B93C3E /* MobileCoreServices.framework in Frameworks */,
+				DBCA28DF26254D6200B93C3E /* libsqlite3.0.tbd in Frameworks */,
+				DBCA28B0262547E100B93C3E /* TapBootstrapSDK.framework in Frameworks */,
+				DBCA28D12625497400B93C3E /* CoreMotion.framework in Frameworks */,
+				DBCA28CF2625496C00B93C3E /* AdSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBCA287A262546F900B93C3E = {
+			isa = PBXGroup;
+			children = (
+				DBCA28AB262547DF00B93C3E /* TapBootstrapResource.bundle */,
+				DBCA28A8262547DF00B93C3E /* TapBootstrapSDK.framework */,
+				DBCA28AA262547DF00B93C3E /* TapCommonResource.bundle */,
+				DBCA28AC262547E000B93C3E /* TapCommonSDK.framework */,
+				DBCA28AD262547E000B93C3E /* TapDB.framework */,
+				DBCA28AE262547E000B93C3E /* TapLoginSDK.framework */,
+				DBCA28A9262547DF00B93C3E /* TapMomentResource.bundle */,
+				DBCA28AF262547E100B93C3E /* TapMomentSDK.framework */,
+				DBCA2885262546F900B93C3E /* TapSDK-iOS-Demo */,
+				DBCA2884262546F900B93C3E /* Products */,
+				DBCA28BD262548AB00B93C3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBCA2884262546F900B93C3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBCA2883262546F900B93C3E /* TapSDK-iOS-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBCA2885262546F900B93C3E /* TapSDK-iOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DBCA28BA262547F200B93C3E /* TapDBViewController.m */,
+				DBCA28B9262547EF00B93C3E /* TapDBViewController.h */,
+				DBCA2886262546F900B93C3E /* AppDelegate.h */,
+				DBCA2887262546F900B93C3E /* AppDelegate.m */,
+				DBCA2889262546F900B93C3E /* SceneDelegate.h */,
+				DBCA288A262546F900B93C3E /* SceneDelegate.m */,
+				DBCA288C262546F900B93C3E /* ViewController.h */,
+				DBCA288D262546F900B93C3E /* ViewController.m */,
+				DBCA288F262546F900B93C3E /* Main.storyboard */,
+				DBCA2895262546FA00B93C3E /* Assets.xcassets */,
+				DBCA2897262546FA00B93C3E /* LaunchScreen.storyboard */,
+				DBCA289A262546FA00B93C3E /* Info.plist */,
+				DBCA289B262546FA00B93C3E /* main.m */,
+				DBCA2892262546F900B93C3E /* TapSDK_iOS_Demo.xcdatamodeld */,
+			);
+			path = "TapSDK-iOS-Demo";
+			sourceTree = "<group>";
+		};
+		DBCA28BD262548AB00B93C3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBCA28D926254CD300B93C3E /* libc++.tbd */,
+				DBCA28D42625498D00B93C3E /* libz.tbd */,
+				DBCA28D32625498700B93C3E /* libsqlite3.0.tbd */,
+				DBCA28D22625497D00B93C3E /* libresolv.tbd */,
+				DBCA28D02625497400B93C3E /* CoreMotion.framework */,
+				DBCA28CE2625496C00B93C3E /* AdSupport.framework */,
+				DBCA28CC2625496300B93C3E /* AppTrackingTransparency.framework */,
+				DBCA28CA2625495700B93C3E /* Photos.framework */,
+				DBCA28C82625495000B93C3E /* MobileCoreServices.framework */,
+				DBCA28C62625494300B93C3E /* CoreTelephony.framework */,
+				DBCA28C42625493C00B93C3E /* AVFoundation.framework */,
+				DBCA28C22625493500B93C3E /* SystemConfiguration.framework */,
+				DBCA28C02625492400B93C3E /* Security.framework */,
+				DBCA28BE262548AB00B93C3E /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBCA2882262546F900B93C3E /* TapSDK-iOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBCA289F262546FA00B93C3E /* Build configuration list for PBXNativeTarget "TapSDK-iOS-Demo" */;
+			buildPhases = (
+				DBCA287F262546F900B93C3E /* Sources */,
+				DBCA2880262546F900B93C3E /* Frameworks */,
+				DBCA2881262546F900B93C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TapSDK-iOS-Demo";
+			productName = "TapSDK-iOS-Demo";
+			productReference = DBCA2883262546F900B93C3E /* TapSDK-iOS-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBCA287B262546F900B93C3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DBCA2882262546F900B93C3E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DBCA287E262546F900B93C3E /* Build configuration list for PBXProject "TapSDK-iOS-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBCA287A262546F900B93C3E;
+			productRefGroup = DBCA2884262546F900B93C3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBCA2882262546F900B93C3E /* TapSDK-iOS-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBCA2881262546F900B93C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCA28B3262547E100B93C3E /* TapBootstrapResource.bundle in Resources */,
+				DBCA2899262546FA00B93C3E /* LaunchScreen.storyboard in Resources */,
+				DBCA28B1262547E100B93C3E /* TapMomentResource.bundle in Resources */,
+				DBCA28B2262547E100B93C3E /* TapCommonResource.bundle in Resources */,
+				DBCA2896262546FA00B93C3E /* Assets.xcassets in Resources */,
+				DBCA2891262546F900B93C3E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBCA287F262546F900B93C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCA289C262546FA00B93C3E /* main.m in Sources */,
+				DBCA288E262546F900B93C3E /* ViewController.m in Sources */,
+				DBCA2894262546F900B93C3E /* TapSDK_iOS_Demo.xcdatamodeld in Sources */,
+				DBCA2888262546F900B93C3E /* AppDelegate.m in Sources */,
+				DBCA28BB262547F200B93C3E /* TapDBViewController.m in Sources */,
+				DBCA288B262546F900B93C3E /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBCA288F262546F900B93C3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBCA2890262546F900B93C3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBCA2897262546FA00B93C3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBCA2898262546FA00B93C3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBCA289D262546FA00B93C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBCA289E262546FA00B93C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBCA28A0262546FA00B93C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UE5H8B62F9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "TapSDK-iOS-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tdssdk.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Everything 2020";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBCA28A1262546FA00B93C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UE5H8B62F9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "TapSDK-iOS-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tdssdk.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Everything 2020";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBCA287E262546F900B93C3E /* Build configuration list for PBXProject "TapSDK-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBCA289D262546FA00B93C3E /* Debug */,
+				DBCA289E262546FA00B93C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBCA289F262546FA00B93C3E /* Build configuration list for PBXNativeTarget "TapSDK-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBCA28A0262546FA00B93C3E /* Debug */,
+				DBCA28A1262546FA00B93C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DBCA2892262546F900B93C3E /* TapSDK_iOS_Demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DBCA2893262546F900B93C3E /* TapSDK_iOS_Demo.xcdatamodel */,
+			);
+			currentVersion = DBCA2893262546F900B93C3E /* TapSDK_iOS_Demo.xcdatamodel */;
+			path = TapSDK_iOS_Demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DBCA287B262546F900B93C3E /* Project object */;
+}
