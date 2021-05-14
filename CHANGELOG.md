@@ -1,4 +1,66 @@
 Changelog
+# v2.1.2 2020/05/14
+## TapBootstrap
+### Breaking changes
+* 删除 `openUserCenter` 接口
+
+## TapFriends
+### Feature
+* 新增消息回调的接口
+    ``` objectivec
+    + (void)registerMessageDelegate:(id<ComponentMessageDelegate>)delegate;
+    ```
+* 新增获取好友邀请链接的接口
+    ``` objectivec
+    [TapFriends generateFriendInvitationWithHandler:^(NSString *_Nullable invitationString, NSError *_Nullable error) {
+        if (error) {
+            NSLog(@"error:%@", error);
+        } else {
+            NSLog(@"url %@", invitationString);
+        }
+    }];
+    ```
+
+* 新增调用系统分享控件分享好友邀请链接的接口
+    ``` objectivec
+    [TapFriends sendFriendInvitationWithHandler:^(BOOL success, NSError *_Nullable error) {
+        if (success) {
+            NSLog(@"分享成功");
+        } else {
+            NSLog(@"分享失败 %@", error);
+        }
+    }];
+    ```
+
+* 新增搜索用户的接口（需要登录状态）
+    ``` objectivec
+    [TapFriends searchUserWithUserId:self.idField.text handler:^(TapUserRelationShip *_Nullable user, NSError *_Nullable error) {
+        if (error) {
+            NSLog(@"error:%@", error);
+        } else {
+            NSString *str = @"";
+
+            str = [str stringByAppendingString:[self beanToString:user]];
+            str = [str stringByAppendingString:@"\n\n"];
+
+            NSLog(@"friend list %@ %@ %@ %@", str, user.isBlocked ? @"yes" : @"no", user.isFollowed ? @"yes" : @"no", user.isFollowing ? @"yes" : @"no");
+        }
+    }];
+    ```
+* 新增拦截好友邀请链接唤起的接口
+    ``` objectivec
+    - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+    return [TapBootstrap handleOpenURL:url] || [TapFriends handleOpenURL:url];
+}
+    ```
+
+## TapFriendUI
+### Feature
+* 新增 TapFriendUISDK.framework 和 TapFriendResource.bundle ，需要在收到链接时直接打开预制的好友添加弹窗，请加入这两个文件
+
+## TapCommon
+* 支持性升级
+
 # v2.1.1 2020/05/10
 
 ## TapBootstrap
