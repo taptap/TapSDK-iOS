@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TapDB Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TapSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">TapTap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/advertiserIDCollectionEnabled">advertiserIDCollectionEnabled</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/clearStaticProperties">+ clearStaticProperties</option>
+		
+		<option value="//api/name/clearUser">+ clearUser</option>
+		
+		<option value="//api/name/deviceAdd:">+ deviceAdd:</option>
+		
+		<option value="//api/name/deviceInitialize:">+ deviceInitialize:</option>
+		
+		<option value="//api/name/deviceUpdate:">+ deviceUpdate:</option>
+		
+		<option value="//api/name/enableLog:">+ enableLog:</option>
+		
+		<option value="//api/name/getDeviceId">+ getDeviceId</option>
+		
+		<option value="//api/name/getStartInfo">+ getStartInfo</option>
+		
+		<option value="//api/name/onChargeSuccess:product:amount:currencyType:payment:">+ onChargeSuccess:product:amount:currencyType:payment:</option>
+		
+		<option value="//api/name/onEvent:properties:">+ onEvent:properties:</option>
+		
+		<option value="//api/name/onStart:channel:version:">+ onStart:channel:version:</option>
+		
+		<option value="//api/name/onStart:channel:version:properties:">+ onStart:channel:version:properties:</option>
+		
+		<option value="//api/name/onStartWithClientId:channel:version:">+ onStartWithClientId:channel:version:</option>
+		
+		<option value="//api/name/onStartWithClientId:channel:version:isCN:">+ onStartWithClientId:channel:version:isCN:</option>
+		
+		<option value="//api/name/onStartWithClientId:channel:version:properties:">+ onStartWithClientId:channel:version:properties:</option>
+		
+		<option value="//api/name/registerDynamicProperties:">+ registerDynamicProperties:</option>
+		
+		<option value="//api/name/registerStaticProperties:">+ registerStaticProperties:</option>
+		
+		<option value="//api/name/setCustomEventHost:">+ setCustomEventHost:</option>
+		
+		<option value="//api/name/setHost:">+ setHost:</option>
+		
+		<option value="//api/name/setLevel:">+ setLevel:</option>
+		
+		<option value="//api/name/setName:">+ setName:</option>
+		
+		<option value="//api/name/setServer:">+ setServer:</option>
+		
+		<option value="//api/name/setUser:">+ setUser:</option>
+		
+		<option value="//api/name/setUser:loginType:">+ setUser:loginType:</option>
+		
+		<option value="//api/name/setUser:loginType:properties:">+ setUser:loginType:properties:</option>
+		
+		<option value="//api/name/setUser:properties:">+ setUser:properties:</option>
+		
+		<option value="//api/name/trackEvent:properties:">+ trackEvent:properties:</option>
+		
+		<option value="//api/name/unregisterStaticProperty:">+ unregisterStaticProperty:</option>
+		
+		<option value="//api/name/userAdd:">+ userAdd:</option>
+		
+		<option value="//api/name/userInitialize:">+ userInitialize:</option>
+		
+		<option value="//api/name/userUpdate:">+ userUpdate:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TapDB Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TapDB.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/advertiserIDCollectionEnabled" title="advertiserIDCollectionEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/advertiserIDCollectionEnabled">&nbsp;&nbsp;advertiserIDCollectionEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Controls the access to IDFA
+If not explicitly set, the default is NO</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (class, nonatomic, assign, getter=isAdvertiserIDCollectionEnabled) BOOL advertiserIDCollectionEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Controls the access to IDFA
+If not explicitly set, the default is NO</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableLog:" title="enableLog:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLog:">+&nbsp;enableLog:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否打开日志输出
+enbale : YES 打开 NO 关闭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enableLog:(BOOL)<em>enable</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否打开日志输出
+enbale : YES 打开 NO 关闭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setHost:" title="setHost:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHost:">+&nbsp;setHost:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>调用该接口修改数据发送的域名，有特殊需要时调用，调用必须位于初始化之前
+域名必须是<a href="https://abc.example.com/">https://abc.example.com/</a>的格式，不能为空</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setHost:(NSString *)<em>host</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>调用该接口修改数据发送的域名，有特殊需要时调用，调用必须位于初始化之前
+域名必须是<a href="https://abc.example.com/">https://abc.example.com/</a>的格式，不能为空</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCustomEventHost:" title="setCustomEventHost:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCustomEventHost:">+&nbsp;setCustomEventHost:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>调用该接口修改自定义事件数据发送的域名，有特殊需要时调用，调用必须位于初始化之前
+域名必须是<a href="https://abc.example.com/">https://abc.example.com/</a>的格式，不能为空</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setCustomEventHost:(NSString *)<em>host</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>调用该接口修改自定义事件数据发送的域名，有特殊需要时调用，调用必须位于初始化之前
+域名必须是<a href="https://abc.example.com/">https://abc.example.com/</a>的格式，不能为空</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onStart:channel:version:" title="onStart:channel:version:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onStart:channel:version:">+&nbsp;onStart:channel:version:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)onStart:(NSString *)<em>appId</em> channel:(nullable NSString *)<em>channel</em> version:(nullable NSString *)<em>gameVersion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onStart:channel:version:properties:" title="onStart:channel:version:properties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onStart:channel:version:properties:">+&nbsp;onStart:channel:version:properties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化，尽早调用
+appId: 注册游戏时获得的APP ID
+channel: 分包渠道名称，可为空
+gameVersion: 游戏版本，可为空，为空时，自动获取游戏安装包的版本（Xcode配置中的Version）
+properties: 自定义属性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)onStart:(NSString *)<em>appId</em> channel:(nullable NSString *)<em>channel</em> version:(nullable NSString *)<em>gameVersion</em> properties:(nullable NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化，尽早调用
+appId: 注册游戏时获得的APP ID
+channel: 分包渠道名称，可为空
+gameVersion: 游戏版本，可为空，为空时，自动获取游戏安装包的版本（Xcode配置中的Version）
+properties: 自定义属性</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onStartWithClientId:channel:version:" title="onStartWithClientId:channel:version:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onStartWithClientId:channel:version:">+&nbsp;onStartWithClientId:channel:version:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)onStartWithClientId:(NSString *)<em>clientId</em> channel:(nullable NSString *)<em>channel</em> version:(nullable NSString *)<em>gameVersion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onStartWithClientId:channel:version:isCN:" title="onStartWithClientId:channel:version:isCN:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onStartWithClientId:channel:version:isCN:">+&nbsp;onStartWithClientId:channel:version:isCN:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)onStartWithClientId:(NSString *)<em>clientId</em> channel:(nullable NSString *)<em>channel</em> version:(nullable NSString *)<em>gameVersion</em> isCN:(BOOL)<em>isCN</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onStartWithClientId:channel:version:properties:" title="onStartWithClientId:channel:version:properties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onStartWithClientId:channel:version:properties:">+&nbsp;onStartWithClientId:channel:version:properties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化，尽早调用
+clientId: TapTap登录sdk后台页面 client id
+channel: 分包渠道名称，可为空
+gameVersion: 游戏版本，可为空，为空时，自动获取游戏安装包的版本（Xcode配置中的Version）
+properties: 自定义属性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)onStartWithClientId:(NSString *)<em>clientId</em> channel:(nullable NSString *)<em>channel</em> version:(nullable NSString *)<em>gameVersion</em> properties:(nullable NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化，尽早调用
+clientId: TapTap登录sdk后台页面 client id
+channel: 分包渠道名称，可为空
+gameVersion: 游戏版本，可为空，为空时，自动获取游戏安装包的版本（Xcode配置中的Version）
+properties: 自定义属性</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUser:" title="setUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUser:">+&nbsp;setUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)setUser:(NSString *)<em>userId</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUser:properties:" title="setUser:properties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUser:properties:">+&nbsp;setUser:properties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)setUser:(NSString *)<em>userId</em> properties:(nullable NSDictionary *)<em>properties</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUser:loginType:" title="setUser:loginType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUser:loginType:">+&nbsp;setUser:loginType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>对外隐藏接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setUser:(NSString *)<em>userId</em> loginType:(TapDBLoginType)<em>loginType</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>对外隐藏接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUser:loginType:properties:" title="setUser:loginType:properties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUser:loginType:properties:">+&nbsp;setUser:loginType:properties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>记录一个用户（不是游戏角色！！！！），需要保证唯一性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setUser:(NSString *)<em>userId</em> loginType:(TapDBLoginType)<em>loginType</em> properties:(nullable NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>用户ID。不同用户需要保证ID的唯一性</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginType</code></th>
+						<td><p>登录方式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>自定义属性</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>记录一个用户（不是游戏角色！！！！），需要保证唯一性</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearUser" title="clearUser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearUser">+&nbsp;clearUser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>登出清理用户</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)clearUser</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>登出清理用户</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getStartInfo" title="getStartInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStartInfo">+&nbsp;getStartInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>目前TapDB SDK仅支持单实例模式，如果多次调用onStart方法，只有最初传入的appid生效。调用该函数可以获取生效的信息
+返回值：包含appId和channel的NSDictionary，对应的value均可能为nil</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDictionary *)getStartInfo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>目前TapDB SDK仅支持单实例模式，如果多次调用onStart方法，只有最初传入的appid生效。调用该函数可以获取生效的信息
+返回值：包含appId和channel的NSDictionary，对应的value均可能为nil</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDeviceId" title="getDeviceId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceId">+&nbsp;getDeviceId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前的设备标识</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getDeviceId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前的设备标识</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLevel:" title="setLevel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLevel:">+&nbsp;setLevel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置用户等级，初次设置时或升级时调用
+level: 等级</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setLevel:(NSInteger)<em>level</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置用户等级，初次设置时或升级时调用
+level: 等级</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setServer:" title="setServer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setServer:">+&nbsp;setServer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置用户服务器，初次设置或更改服务器的时候调用
+server: 服务器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setServer:(NSString *)<em>server</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置用户服务器，初次设置或更改服务器的时候调用
+server: 服务器</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setName:" title="setName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setName:">+&nbsp;setName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置用户名</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setName:(NSString *)<em>name</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>必传，长度大于0并小于等于256，用户名</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置用户名</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onChargeSuccess:product:amount:currencyType:payment:" title="onChargeSuccess:product:amount:currencyType:payment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onChargeSuccess:product:amount:currencyType:payment:">+&nbsp;onChargeSuccess:product:amount:currencyType:payment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>充值成功时调用
+orderId: 订单ID，可为空
+product: 产品名称，可为空
+amount: 充值金额（单位分，即无论什么币种，都需要乘以100）
+currencyType: 货币类型，可为空，参考：人民币 CNY，美元 USD；欧元 EUR
+payment: 支付方式，可为空，如：支付宝</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)onChargeSuccess:(nullable NSString *)<em>orderId</em> product:(nullable NSString *)<em>product</em> amount:(NSInteger)<em>amount</em> currencyType:(nullable NSString *)<em>currencyType</em> payment:(nullable NSString *)<em>payment</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>充值成功时调用
+orderId: 订单ID，可为空
+product: 产品名称，可为空
+amount: 充值金额（单位分，即无论什么币种，都需要乘以100）
+currencyType: 货币类型，可为空，参考：人民币 CNY，美元 USD；欧元 EUR
+payment: 支付方式，可为空，如：支付宝</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackEvent:properties:" title="trackEvent:properties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackEvent:properties:">+&nbsp;trackEvent:properties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义事件
+eventName: 事件代码，需要在控制后台预先进行配置
+properties: 事件属性，需要在控制后台预先进行配置,值为长度大于0并小于等于256的字符串或绝对值小于1E11的浮点数</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackEvent:(NSString *)<em>eventName</em> properties:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自定义事件
+eventName: 事件代码，需要在控制后台预先进行配置
+properties: 事件属性，需要在控制后台预先进行配置,值为长度大于0并小于等于256的字符串或绝对值小于1E11的浮点数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onEvent:properties:" title="onEvent:properties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onEvent:properties:">+&nbsp;onEvent:properties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义事件,即将弃用，请使用trackEvent接口
+eventCode: 事件代码，需要在控制后台预先进行配置
+properties: 事件属性，需要在控制后台预先进行配置,值为长度大于0并小于等于256的字符串或绝对值小于1E11的浮点数</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)onEvent:(NSString *)<em>eventCode</em> properties:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自定义事件,即将弃用，请使用trackEvent接口
+eventCode: 事件代码，需要在控制后台预先进行配置
+properties: 事件属性，需要在控制后台预先进行配置,值为长度大于0并小于等于256的字符串或绝对值小于1E11的浮点数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceInitialize:" title="deviceInitialize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceInitialize:">+&nbsp;deviceInitialize:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化设备属性操作</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)deviceInitialize:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>属性字典</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化设备属性操作</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceUpdate:" title="deviceUpdate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceUpdate:">+&nbsp;deviceUpdate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新设备属性操作</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)deviceUpdate:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>属性字典</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新设备属性操作</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceAdd:" title="deviceAdd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceAdd:">+&nbsp;deviceAdd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设备属性增加操作</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)deviceAdd:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>属性字典 暂时只支持数字属性</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设备属性增加操作</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userInitialize:" title="userInitialize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userInitialize:">+&nbsp;userInitialize:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化用户属性操作</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)userInitialize:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>属性字典</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化用户属性操作</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userUpdate:" title="userUpdate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userUpdate:">+&nbsp;userUpdate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新用户属性操作</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)userUpdate:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>属性字典</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新用户属性操作</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userAdd:" title="userAdd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userAdd:">+&nbsp;userAdd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用户属性增加操作</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)userAdd:(NSDictionary *)<em>properties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>properties</code></th>
+						<td><p>属性字典 暂时只支持数字属性</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用户属性增加操作</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerStaticProperties:" title="registerStaticProperties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerStaticProperties:">+&nbsp;registerStaticProperties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加静态事件属性，每个事件都将会发送</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerStaticProperties:(NSDictionary *)<em>staticProperties</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>staticProperties</code></th>
+						<td><p>属性字典</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加静态事件属性，每个事件都将会发送</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearStaticProperties" title="clearStaticProperties"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearStaticProperties">+&nbsp;clearStaticProperties</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除添加的静态事件属性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)clearStaticProperties</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除添加的静态事件属性</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unregisterStaticProperty:" title="unregisterStaticProperty:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unregisterStaticProperty:">+&nbsp;unregisterStaticProperty:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除添加的某个静态事件属性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unregisterStaticProperty:(NSString *)<em>propertyName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>propertyName</code></th>
+						<td><p>属性Key</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除添加的某个静态事件属性</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerDynamicProperties:" title="registerDynamicProperties:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerDynamicProperties:">+&nbsp;registerDynamicProperties:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加动态事件属性，每次发送事件会调用dynamicPropertiesCaculator</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerDynamicProperties:(NSDictionary *( ^ ) ( void ))<em>dynamicPropertiesCaculator</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dynamicPropertiesCaculator</code></th>
+						<td><p>动态属性回调，需返回希望上传的属性字典</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加动态事件属性，每次发送事件会调用dynamicPropertiesCaculator</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TapDB.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 TapTap. All rights reserved. Updated: 2021-05-18</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
