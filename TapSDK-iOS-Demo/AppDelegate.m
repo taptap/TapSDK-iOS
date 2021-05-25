@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <TapBootstrapSDK/TapBootstrapSDK.h>
 @interface AppDelegate ()
 
 @end
@@ -20,7 +20,13 @@
 }
 
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  return [TapBootstrap handleOpenURL:url];
+}
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+  return [TapBootstrap handleOpenURL:url];
+}
 
 
 #pragma mark - Core Data stack

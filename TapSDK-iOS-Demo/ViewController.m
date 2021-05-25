@@ -129,11 +129,13 @@
 // @param token token 对象
 - (void)onLoginSuccess:(AccessToken *)token{
     NSLog (@"onLoginSuccess");
+    [self.view makeToast:@"登录成功"];
 }
 
 // 登录取消
 - (void)onLoginCancel{
     NSLog (@"onLoginCancel");
+    [self.view makeToast:@"登录成功"];
 }
 
 // 登录失败
