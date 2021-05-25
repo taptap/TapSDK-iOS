@@ -12,6 +12,10 @@
 #import <TapMomentSDK/TapMomentResultCode.h>
 #import <Foundation/Foundation.h>
 
+#define TapMomentSDK                @"TapMoment"
+#define TapMomentSDK_VERSION_NUMBER @"20102001"
+#define TapMomentSDK_VERSION        @"2.1.2"
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -47,6 +51,12 @@ FOUNDATION_EXPORT NSString *const TapMomentPageUserKey;
 /// 打开动态
 /// @param config TapMomentConfig
 + (void)open:(TapMomentConfig *)config;
+
+/// 打开特定页面
+/// @param config TapMomentConfig
+/// @param page page link
+/// @param extras extra parameters
++ (void)directlyOpen:(TapMomentConfig *)config page:(NSString *)page extras:(NSDictionary *)extras;
 
 /// 发布动态
 /// @param content 发布的动态内容

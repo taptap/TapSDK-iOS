@@ -72,7 +72,17 @@
     
     //初始化SDK
     TapConfig *config = TapConfig.new;
-    config.clientId = @"0RiAlMny7jiz086FaU";
+    config.clientId = @"BL1SbiKHHGGmivSEe8";
+    config.clientSecret=@"NQDo7btXA6ZXmXNaMM3SvqOiicV5OKtqlHYzDxyL";
+    
+    TapDBConfig * dbConfig = [[TapDBConfig alloc]init];
+    
+    dbConfig.enable = true;
+    dbConfig.channel=@"";
+    dbConfig.gameVersion=@"";
+    dbConfig.advertiserIDCollectionEnabled=true;
+    config.dbConfig = dbConfig;
+    
     config.region = TapSDKRegionTypeCN;
     [TapBootstrap initWithConfig:config];
     //设置登录回调
@@ -80,34 +90,8 @@
     [TapBootstrap registerUserStatusChangedDelegate:self];
     
     //开启动态
-    [TapMoment initWithClientId:config.clientId];
     [TapMoment setDelegate:self];
-    
-//    //示例代码
-//    BOOL isInit = [TapBootstrap isInitialized];
-//    [TapBootstrap getUser:^(TapUser * _Nullable userInfo, NSError * _Nullable error) {
-//        if(error){
-//            NSLog(@"获取用户信息失败 %@", error);
-//        }else{
-//            NSLog(@"获取用户信息成功 %@", userInfo);
-//        }
-//    }];
-//    [TapBootstrap setPreferredLanguage:0];
-    //AccessToken *accessToken = [TapBootstrap getCurrentToken];
-//    if(accessToken == nil){
-//        //未登录，请登录
-//    }else{
-//        //已经登录
-//    }
-//
-//    TapMomentConfig * tconfig = TapMomentConfig.new;
-//    tconfig.orientation = TapMomentOrientationDefault;
-//    TapMomentImageData *postData = TapMomentImageData.new;
-//    postData.images = @[@"file://..."];
-//    postData.content = @"我是图片描述";
-//    [TapMoment publish:tconfig content:(postData)];
-//    [TapMoment close];
-//    [TapMoment closeWithTitle:@"title" content:@"content" showConfirm:YES];
+   
 }
 
 #pragma mark - 登录相关

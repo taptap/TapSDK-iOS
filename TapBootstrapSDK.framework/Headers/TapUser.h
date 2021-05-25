@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isGuest;
 @property (nonatomic, assign) long gender;
 
+- (instancetype)initWithJsonString:(NSString *)json;
+
 - (NSString *)toJsonString;
 @end
 

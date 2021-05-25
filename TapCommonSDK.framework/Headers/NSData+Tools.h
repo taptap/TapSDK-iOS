@@ -16,4 +16,7 @@
 
 - (NSString *)tds_stringFromData;
 
+- (NSData *)tds_aes256Encrypt:(NSString *)key;
+- (NSData *)tds_aes256Decrypt:(NSString *)key;
+
 @end

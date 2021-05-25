@@ -15,15 +15,24 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TapCommonSDK/PublicHeader.h>
 
-#define TapCommonSDK_VERSION        @"2.0.0"
-
 #import <TapCommonSDK/TapConfig.h>
-#import <TapCommonSDK/TDSAccountProvider.h>
-
+#import <TapCommonSDK/TapDBConfig.h>
 
 #import <TapCommonSDK/TDSAccount.h>
-#import <TapCommonSDK/TDSAutoLayout.h>
+#import <TapCommonSDK/TDSAccountProvider.h>
+#import <TapCommonSDK/TDSAccountNotification.h>
+
+#import <TapCommonSDK/ComponentMessageDelegate.h>
+
+#import <TapCommonSDK/TDSDomainManager.h>
+
 #import <TapCommonSDK/TDSGameUtil.h>
+
+#import <TapCommonSDK/TDSAutoLayout.h>
+#import <TapCommonSDK/TDSButton.h>
+#import <TapCommonSDK/TDSCommonDialogView.h>
+#import <TapCommonSDK/TDSCommonEnvironment.h>
+
 #import <TapCommonSDK/EngineBridgeError.h>
 #import <TapCommonSDK/TDSBridge.h>
 #import <TapCommonSDK/TDSBridgeCallback.h>
@@ -35,7 +44,7 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/TDSResult.h>
 #import <TapCommonSDK/NSArray+Safe.h>
 #import <TapCommonSDK/NSBundle+Tools.h>
-#import <TapCommonSDK/NSData+JSON.h>
+#import <TapCommonSDK/NSData+Tools.h>
 #import <TapCommonSDK/NSDictionary+JSON.h>
 #import <TapCommonSDK/NSDictionary+TDSSafe.h>
 #import <TapCommonSDK/NSMutableArray+Safe.h>
@@ -78,7 +87,6 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/TDSWKCookieWebview.h>
 #import <TapCommonSDK/WKCookieWebview+CookiesHandle.h>
 #import <TapCommonSDK/TDSCommonService.h>
-#import <TapCommonSDK/TDSCommonMacros.h>
 #import <TapCommonSDK/TDSNetInterceptor.h>
 #import <TapCommonSDK/TDSCommonConfirmDialog.h>
 #import <TapCommonSDK/TDSCommonUIHelper.h>
@@ -88,3 +96,5 @@ FOUNDATION_EXPORT const unsigned char TapCommonSDKVersionString[];
 #import <TapCommonSDK/TDSLocalizeManager.h>
 #import <TapCommonSDK/TDSWSSecurity.h>
 #import <TapCommonSDK/TDSWSWebSocket.h>
+#import <TapCommonSDK/TDSTrackerManager.h>
+#import <TapCommonSDK/TDSTrackerConfig.h>
