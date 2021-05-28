@@ -1,4 +1,13 @@
 Changelog
+# v2.1.3 2020/05/28
+
+## Feature
+* 新增繁体中文、日文、韩文、泰语、印度尼西亚语5种新的翻译，并可通过 `TapBootstrap setPreferredLanguage:` 设定
+* TapCommonSDK 新增方法 `TapGameUtil isTapTapInstalled` 和 `TapGameUtil isTapGlobalInstalled`，可用来检测设备上是否安装了TapTap/TapTap 国际版客户端，需要注意，这个能力需要在 info.plist 中 LSApplicationQueriesSchemes 配置里增加 `tapsdk` 和 `tapiosdk`
+
+## Bugfix
+* TapDB 修复了一个关于版本定义的问题
+
 # v2.1.2 2020/05/14
 ## TapBootstrap
 ### Breaking changes
@@ -50,8 +59,8 @@ Changelog
 * 新增拦截好友邀请链接唤起的接口
     ``` objectivec
     - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
-    return [TapBootstrap handleOpenURL:url] || [TapFriends handleOpenURL:url];
-}
+        return [TapBootstrap handleOpenURL:url] || [TapFriends  handleOpenURL:url];
+    }
     ```
 
 ## TapFriendUI
