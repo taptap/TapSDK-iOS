@@ -1,4 +1,22 @@
-Changelog
+# Changelog
+# TapSDK v2.1.4 2020/06/10
+
+## TapBootstrap
+
+### Optimization and fixed bugs
+- 内部优化
+
+## TapFriend
+
+### New features
+- 新增设置富信息和查询富信息接口
+- TapUserRelationShip 新增 online & time & TapRichPresence 参数
+
+## TapCommon
+
+### Optimization and fixed bugs
+- 优化多语言相关
+
 # v2.1.3 2020/05/28
 
 ## Feature
