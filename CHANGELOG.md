@@ -1,4 +1,11 @@
 # Changelog
+# TapSDK v2.1.5 2020/06/22
+
+## TapMoment
+
+### New features
+- 新增场景化入口内的回调 code = TM_RESULT_CODE_MOMENT_SCENE_EVENT
+
 # TapSDK v2.1.4 2020/06/10
 
 ## TapBootstrap
