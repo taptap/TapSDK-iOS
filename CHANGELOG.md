@@ -1,5 +1,5 @@
 # Changelog
-## TapSDK v2.1.6 2020/07/1
+## TapSDK v2.1.6 2020/07/01
 ### TapMoment
 #### Optimization and fixed bugs
 - 修复调用 [TapMoment close] 不生效的 bug
