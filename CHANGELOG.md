@@ -1,45 +1,43 @@
 # Changelog
-# TapSDK v2.1.5 2020/06/22
+## TapSDK v2.1.6 2020/07/1
+### TapMoment
+#### Optimization and fixed bugs
+- 修复调用 [TapMoment close] 不生效的 bug
 
-## TapMoment
-
-### New features
+## TapSDK v2.1.5 2020/06/22
+### TapMoment
+#### New features
 - 新增场景化入口内的回调 code = TM_RESULT_CODE_MOMENT_SCENE_EVENT
 
-# TapSDK v2.1.4 2020/06/10
-
-## TapBootstrap
-
-### Optimization and fixed bugs
+## TapSDK v2.1.4 2020/06/10
+### TapBootstrap
+#### Optimization and fixed bugs
 - 内部优化
 
-## TapFriend
-
-### New features
+### TapFriend
+#### New features
 - 新增设置富信息和查询富信息接口
 - TapUserRelationShip 新增 online & time & TapRichPresence 参数
 
-## TapCommon
-
-### Optimization and fixed bugs
+### TapCommon
+#### Optimization and fixed bugs
 - 优化多语言相关
 
-# v2.1.3 2020/05/28
-
-## Feature
+## v2.1.3 2020/05/28
+### Feature
 * 新增繁体中文、日文、韩文、泰语、印度尼西亚语5种新的翻译，并可通过 `TapBootstrap setPreferredLanguage:` 设定
 * TapCommonSDK 新增方法 `TapGameUtil isTapTapInstalled` 和 `TapGameUtil isTapGlobalInstalled`，可用来检测设备上是否安装了TapTap/TapTap 国际版客户端，需要注意，这个能力需要在 info.plist 中 LSApplicationQueriesSchemes 配置里增加 `tapsdk` 和 `tapiosdk`
 
-## Bugfix
+### Bugfix
 * TapDB 修复了一个关于版本定义的问题
 
-# v2.1.2 2020/05/14
-## TapBootstrap
-### Breaking changes
+## v2.1.2 2020/05/14
+### TapBootstrap
+#### Breaking changes
 * 删除 `openUserCenter` 接口
 
-## TapFriends
-### Feature
+### TapFriends
+#### Feature
 * 新增消息回调的接口
     ``` objectivec
     + (void)registerMessageDelegate:(id<ComponentMessageDelegate>)delegate;
@@ -88,17 +86,16 @@
     }
     ```
 
-## TapFriendUI
-### Feature
+### TapFriendUI
+#### Feature
 * 新增 TapFriendUISDK.framework 和 TapFriendResource.bundle ，需要在收到链接时直接打开预制的好友添加弹窗，请加入这两个文件
 
-## TapCommon
+### TapCommon
 * 支持性升级
 
-# v2.1.1 2020/05/10
-
-## TapBootstrap
-### Feature
+## v2.1.1 2020/05/10
+### TapBootstrap
+#### Feature
 * 新增篝火测试资格校验接口
     ``` objectivec
         [TapBootstrap getTestQualification:^(BOOL isQualified, NSError *_Nullable error) {
@@ -120,7 +117,7 @@
     tapConfig.dbConfig = dbConfig;
     ```
 
-### Breaking changes
+#### Breaking changes
 * TapConfig 新增 clientSecret 字段，必填
 * TapBootstrapLoginType 删除 Apple 和 Guest 类型
 * 删除绑定接口
@@ -128,19 +125,19 @@
     + (void)bind:(TapBootstrapBindType)type permissions:(NSArray *)permissions;
     ```
 
-## TapMoment
-### Feature
+### TapMoment
+#### Feature
 * 新增打开特定页面的接口（打开场景化入口等） 
     ``` objectivec
      [TapMoment directlyOpen:mconfig page:TapMomentPageShortcut extras:@{ TapMomentPageShortcutKey: @"sceneid" }];
     ```
 
-## TapDB
-### Feature
+### TapDB
+#### Feature
 * 新增 IDFA 开关，默认关闭
     ``` objectivec
     // 开启 IDFA
     [TapDB setAdvertiserIDCollectionEnabled:YES];
     ```
 ---
-## v2.0.0 2020/04/08
+### v2.0.0 2020/04/08
