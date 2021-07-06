@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72E5EE612656100800FA5F17 /* TapBootstrapResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72E5EE562656100500FA5F17 /* TapBootstrapResource.bundle */; };
-		72E5EE622656100800FA5F17 /* TapFriendSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EE572656100600FA5F17 /* TapFriendSDK.framework */; };
-		72E5EE632656100800FA5F17 /* TapCommonResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72E5EE582656100600FA5F17 /* TapCommonResource.bundle */; };
-		72E5EE642656100800FA5F17 /* TapFriendUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EE592656100600FA5F17 /* TapFriendUISDK.framework */; };
-		72E5EE652656100800FA5F17 /* TapMomentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EE5A2656100700FA5F17 /* TapMomentSDK.framework */; };
-		72E5EE662656100800FA5F17 /* TapCommonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EE5B2656100700FA5F17 /* TapCommonSDK.framework */; };
-		72E5EE672656100800FA5F17 /* TapLoginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EE5C2656100800FA5F17 /* TapLoginSDK.framework */; };
-		72E5EE682656100800FA5F17 /* TapFriendResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72E5EE5D2656100800FA5F17 /* TapFriendResource.bundle */; };
-		72E5EE692656100800FA5F17 /* TapMomentResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72E5EE5E2656100800FA5F17 /* TapMomentResource.bundle */; };
-		72E5EE6A2656100800FA5F17 /* TapBootstrapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EE5F2656100800FA5F17 /* TapBootstrapSDK.framework */; };
-		72E5EE6B2656100800FA5F17 /* TapDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5EE602656100800FA5F17 /* TapDB.framework */; };
 		72E5EE6D2656135F00FA5F17 /* TapFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E5EE6C2656135F00FA5F17 /* TapFriendsViewController.m */; };
+		D3350DD726942B6C009C52F0 /* TapMomentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3350DCD26942B6A009C52F0 /* TapMomentSDK.framework */; };
+		D3350DD826942B6C009C52F0 /* TapFriendResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3350DCE26942B6A009C52F0 /* TapFriendResource.bundle */; };
+		D3350DD926942B6C009C52F0 /* TapCommonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3350DCF26942B6B009C52F0 /* TapCommonSDK.framework */; };
+		D3350DDA26942B6C009C52F0 /* TapLoginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3350DD026942B6B009C52F0 /* TapLoginSDK.framework */; };
+		D3350DDB26942B6C009C52F0 /* TapFriendUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3350DD126942B6B009C52F0 /* TapFriendUISDK.framework */; };
+		D3350DDC26942B6C009C52F0 /* TapBootstrapResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3350DD226942B6B009C52F0 /* TapBootstrapResource.bundle */; };
+		D3350DDD26942B6C009C52F0 /* TapBootstrapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3350DD326942B6C009C52F0 /* TapBootstrapSDK.framework */; };
+		D3350DDE26942B6C009C52F0 /* TapCommonResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3350DD426942B6C009C52F0 /* TapCommonResource.bundle */; };
+		D3350DDF26942B6C009C52F0 /* TapDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3350DD526942B6C009C52F0 /* TapDB.framework */; };
+		D3350DE026942B6C009C52F0 /* TapMomentResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3350DD626942B6C009C52F0 /* TapMomentResource.bundle */; };
+		D3350DE226942BCE009C52F0 /* TapFriendSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3350DE126942BCE009C52F0 /* TapFriendSDK.framework */; };
 		DBCA2888262546F900B93C3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCA2887262546F900B93C3E /* AppDelegate.m */; };
 		DBCA288E262546F900B93C3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCA288D262546F900B93C3E /* ViewController.m */; };
 		DBCA2891262546F900B93C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCA288F262546F900B93C3E /* Main.storyboard */; };
@@ -44,19 +44,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		72E5EE562656100500FA5F17 /* TapBootstrapResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapBootstrapResource.bundle; sourceTree = "<group>"; };
-		72E5EE572656100600FA5F17 /* TapFriendSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapFriendSDK.framework; sourceTree = "<group>"; };
-		72E5EE582656100600FA5F17 /* TapCommonResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapCommonResource.bundle; sourceTree = "<group>"; };
-		72E5EE592656100600FA5F17 /* TapFriendUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapFriendUISDK.framework; sourceTree = "<group>"; };
-		72E5EE5A2656100700FA5F17 /* TapMomentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapMomentSDK.framework; sourceTree = "<group>"; };
-		72E5EE5B2656100700FA5F17 /* TapCommonSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapCommonSDK.framework; sourceTree = "<group>"; };
-		72E5EE5C2656100800FA5F17 /* TapLoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapLoginSDK.framework; sourceTree = "<group>"; };
-		72E5EE5D2656100800FA5F17 /* TapFriendResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapFriendResource.bundle; sourceTree = "<group>"; };
-		72E5EE5E2656100800FA5F17 /* TapMomentResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapMomentResource.bundle; sourceTree = "<group>"; };
-		72E5EE5F2656100800FA5F17 /* TapBootstrapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapBootstrapSDK.framework; sourceTree = "<group>"; };
-		72E5EE602656100800FA5F17 /* TapDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapDB.framework; sourceTree = "<group>"; };
 		72E5EE6C2656135F00FA5F17 /* TapFriendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapFriendsViewController.m; sourceTree = "<group>"; };
 		72E5EE6E2656138600FA5F17 /* TapFriendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapFriendsViewController.h; sourceTree = "<group>"; };
+		D3350DCD26942B6A009C52F0 /* TapMomentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapMomentSDK.framework; sourceTree = "<group>"; };
+		D3350DCE26942B6A009C52F0 /* TapFriendResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapFriendResource.bundle; sourceTree = "<group>"; };
+		D3350DCF26942B6B009C52F0 /* TapCommonSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapCommonSDK.framework; sourceTree = "<group>"; };
+		D3350DD026942B6B009C52F0 /* TapLoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapLoginSDK.framework; sourceTree = "<group>"; };
+		D3350DD126942B6B009C52F0 /* TapFriendUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapFriendUISDK.framework; sourceTree = "<group>"; };
+		D3350DD226942B6B009C52F0 /* TapBootstrapResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapBootstrapResource.bundle; sourceTree = "<group>"; };
+		D3350DD326942B6C009C52F0 /* TapBootstrapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapBootstrapSDK.framework; sourceTree = "<group>"; };
+		D3350DD426942B6C009C52F0 /* TapCommonResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapCommonResource.bundle; sourceTree = "<group>"; };
+		D3350DD526942B6C009C52F0 /* TapDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapDB.framework; sourceTree = "<group>"; };
+		D3350DD626942B6C009C52F0 /* TapMomentResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapMomentResource.bundle; sourceTree = "<group>"; };
+		D3350DE126942BCE009C52F0 /* TapFriendSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapFriendSDK.framework; sourceTree = "<group>"; };
 		DBCA2883262546F900B93C3E /* TapSDK-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapSDK-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCA2886262546F900B93C3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBCA2887262546F900B93C3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,26 +92,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBCA28CD2625496300B93C3E /* AppTrackingTransparency.framework in Frameworks */,
-				72E5EE642656100800FA5F17 /* TapFriendUISDK.framework in Frameworks */,
+				D3350DDA26942B6C009C52F0 /* TapLoginSDK.framework in Frameworks */,
+				D3350DDF26942B6C009C52F0 /* TapDB.framework in Frameworks */,
 				DBCA28DB26254D4600B93C3E /* libc++.tbd in Frameworks */,
+				D3350DD926942B6C009C52F0 /* TapCommonSDK.framework in Frameworks */,
 				DBCA28E126254D6D00B93C3E /* libresolv.tbd in Frameworks */,
 				DBCA28C72625494300B93C3E /* CoreTelephony.framework in Frameworks */,
+				D3350DE226942BCE009C52F0 /* TapFriendSDK.framework in Frameworks */,
 				DBCA28C52625493C00B93C3E /* AVFoundation.framework in Frameworks */,
 				DBCA28BF262548AB00B93C3E /* WebKit.framework in Frameworks */,
 				DBCA28DD26254D5700B93C3E /* libz.tbd in Frameworks */,
-				72E5EE662656100800FA5F17 /* TapCommonSDK.framework in Frameworks */,
 				DBCA28CB2625495700B93C3E /* Photos.framework in Frameworks */,
 				DBCA28C12625492400B93C3E /* Security.framework in Frameworks */,
 				DBCA28C32625493500B93C3E /* SystemConfiguration.framework in Frameworks */,
-				72E5EE622656100800FA5F17 /* TapFriendSDK.framework in Frameworks */,
 				DBCA28C92625495000B93C3E /* MobileCoreServices.framework in Frameworks */,
-				72E5EE652656100800FA5F17 /* TapMomentSDK.framework in Frameworks */,
-				72E5EE6B2656100800FA5F17 /* TapDB.framework in Frameworks */,
 				DBCA28DF26254D6200B93C3E /* libsqlite3.0.tbd in Frameworks */,
+				D3350DD726942B6C009C52F0 /* TapMomentSDK.framework in Frameworks */,
+				D3350DDD26942B6C009C52F0 /* TapBootstrapSDK.framework in Frameworks */,
 				DBCA28D12625497400B93C3E /* CoreMotion.framework in Frameworks */,
-				72E5EE672656100800FA5F17 /* TapLoginSDK.framework in Frameworks */,
-				72E5EE6A2656100800FA5F17 /* TapBootstrapSDK.framework in Frameworks */,
 				DBCA28CF2625496C00B93C3E /* AdSupport.framework in Frameworks */,
+				D3350DDB26942B6C009C52F0 /* TapFriendUISDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,17 +121,17 @@
 		DBCA287A262546F900B93C3E = {
 			isa = PBXGroup;
 			children = (
-				72E5EE562656100500FA5F17 /* TapBootstrapResource.bundle */,
-				72E5EE5F2656100800FA5F17 /* TapBootstrapSDK.framework */,
-				72E5EE582656100600FA5F17 /* TapCommonResource.bundle */,
-				72E5EE5B2656100700FA5F17 /* TapCommonSDK.framework */,
-				72E5EE602656100800FA5F17 /* TapDB.framework */,
-				72E5EE5D2656100800FA5F17 /* TapFriendResource.bundle */,
-				72E5EE572656100600FA5F17 /* TapFriendSDK.framework */,
-				72E5EE592656100600FA5F17 /* TapFriendUISDK.framework */,
-				72E5EE5C2656100800FA5F17 /* TapLoginSDK.framework */,
-				72E5EE5E2656100800FA5F17 /* TapMomentResource.bundle */,
-				72E5EE5A2656100700FA5F17 /* TapMomentSDK.framework */,
+				D3350DE126942BCE009C52F0 /* TapFriendSDK.framework */,
+				D3350DD226942B6B009C52F0 /* TapBootstrapResource.bundle */,
+				D3350DD326942B6C009C52F0 /* TapBootstrapSDK.framework */,
+				D3350DD426942B6C009C52F0 /* TapCommonResource.bundle */,
+				D3350DCF26942B6B009C52F0 /* TapCommonSDK.framework */,
+				D3350DD526942B6C009C52F0 /* TapDB.framework */,
+				D3350DCE26942B6A009C52F0 /* TapFriendResource.bundle */,
+				D3350DD126942B6B009C52F0 /* TapFriendUISDK.framework */,
+				D3350DD026942B6B009C52F0 /* TapLoginSDK.framework */,
+				D3350DD626942B6C009C52F0 /* TapMomentResource.bundle */,
+				D3350DCD26942B6A009C52F0 /* TapMomentSDK.framework */,
 				DBCA2885262546F900B93C3E /* TapSDK-iOS-Demo */,
 				DBCA2884262546F900B93C3E /* Products */,
 				DBCA28BD262548AB00B93C3E /* Frameworks */,
@@ -245,11 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBCA2899262546FA00B93C3E /* LaunchScreen.storyboard in Resources */,
+				D3350DDC26942B6C009C52F0 /* TapBootstrapResource.bundle in Resources */,
+				D3350DD826942B6C009C52F0 /* TapFriendResource.bundle in Resources */,
+				D3350DE026942B6C009C52F0 /* TapMomentResource.bundle in Resources */,
 				DBCA2896262546FA00B93C3E /* Assets.xcassets in Resources */,
-				72E5EE632656100800FA5F17 /* TapCommonResource.bundle in Resources */,
-				72E5EE692656100800FA5F17 /* TapMomentResource.bundle in Resources */,
-				72E5EE682656100800FA5F17 /* TapFriendResource.bundle in Resources */,
-				72E5EE612656100800FA5F17 /* TapBootstrapResource.bundle in Resources */,
+				D3350DDE26942B6C009C52F0 /* TapCommonResource.bundle in Resources */,
 				DBCA2891262546F900B93C3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tds.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tds.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
