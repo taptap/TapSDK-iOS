@@ -13,8 +13,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #define TapFriendSDK                @"TapFriend"
-#define TapFriendSDK_VERSION_NUMBER @"20102001"
-#define TapFriendSDK_VERSION        @"2.1.2"
+#define TapFriendSDK_VERSION_NUMBER @"20106001"
+#define TapFriendSDK_VERSION        @"2.1.6"
 
 typedef void (^TapSimpleHandler)(NSError *_Nullable error);
 typedef void (^TapFriendRelationHandler)(NSArray<TapUserRelationShip *> *_Nullable userList, NSError *_Nullable error);
@@ -87,6 +87,20 @@ typedef void (^TapFriendSendFriendInvitationHandler)(BOOL success, NSError *_Nul
 /// @param handler 回调
 + (void)searchUserWithUserId:(NSString *)userId
                      handler:(TapFriendSearchHandler)handler;
+
+/// 设置富信息
+/// @param key key
+/// @param value value
+/// @param handler 回调
++ (void)setRichPresence:(NSString *)key
+                  value:(NSString *)value
+                handler:(TapSimpleHandler)handler;
+
+/// 清除富信息
+/// @param key key
+/// @param handler 回调
++ (void)clearRichPresence:(NSString *)key
+                  handler:(TapSimpleHandler)handler;
 
 /// 获取好友邀请链接
 /// @param handler handler
