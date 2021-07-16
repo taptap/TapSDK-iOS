@@ -1,4 +1,18 @@
 # Changelog
+## TapSDK v3.0.0 2021/07/16
+Tips: 当前版本不支持不支持 v2.x 升级
+### TapBootstrap
+#### Breaking changes
+- 账号系统升级为TDSUser
+- 登录相关接口修改
+
+- 获取篝火资格接口移动至 TapLogin 模块
+- 删除设置语言接口
+
+### TapLogin
+#### Breaking changes
+- 开放所有接口，支持获取 TapTap 账号的 openID 和 unionID
+
 ## TapSDK v2.1.7 2021/07/14
 ### TapDB
 #### Optimization and fixed bugs
