@@ -1,20 +1,20 @@
 # Changelog
-## TapSDK v2.1.7 2020/07/14
+## TapSDK v2.1.7 2021/07/14
 ### TapDB
 #### Optimization and fixed bugs
 - TapDB 充值接口新增支持传入自定义字段的函数
 
-## TapSDK v2.1.6 2020/07/01
+## TapSDK v2.1.6 2021/07/01
 ### TapMoment
 #### Optimization and fixed bugs
 - 修复调用 [TapMoment close] 不生效的 bug
 
-## TapSDK v2.1.5 2020/06/22
+## TapSDK v2.1.5 2021/06/22
 ### TapMoment
 #### New features
 - 新增场景化入口内的回调 code = TM_RESULT_CODE_MOMENT_SCENE_EVENT
 
-## TapSDK v2.1.4 2020/06/10
+## TapSDK v2.1.4 2021/06/10
 ### TapBootstrap
 #### Optimization and fixed bugs
 - 内部优化
@@ -28,7 +28,7 @@
 #### Optimization and fixed bugs
 - 优化多语言相关
 
-## v2.1.3 2020/05/28
+## v2.1.3 2021/05/28
 ### Feature
 * 新增繁体中文、日文、韩文、泰语、印度尼西亚语5种新的翻译，并可通过 `TapBootstrap setPreferredLanguage:` 设定
 * TapCommonSDK 新增方法 `TapGameUtil isTapTapInstalled` 和 `TapGameUtil isTapGlobalInstalled`，可用来检测设备上是否安装了TapTap/TapTap 国际版客户端，需要注意，这个能力需要在 info.plist 中 LSApplicationQueriesSchemes 配置里增加 `tapsdk` 和 `tapiosdk`
@@ -36,7 +36,7 @@
 ### Bugfix
 * TapDB 修复了一个关于版本定义的问题
 
-## v2.1.2 2020/05/14
+## v2.1.2 2021/05/14
 ### TapBootstrap
 #### Breaking changes
 * 删除 `openUserCenter` 接口
@@ -98,7 +98,7 @@
 ### TapCommon
 * 支持性升级
 
-## v2.1.1 2020/05/10
+## v2.1.1 2021/05/10
 ### TapBootstrap
 #### Feature
 * 新增篝火测试资格校验接口
@@ -145,4 +145,4 @@
     [TapDB setAdvertiserIDCollectionEnabled:YES];
     ```
 ---
-### v2.0.0 2020/04/08
+### v2.0.0 2021/04/08
