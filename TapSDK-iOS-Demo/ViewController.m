@@ -10,7 +10,7 @@
 #import <TapMomentSDK/TapMomentSDK.h>
 #import "TapDBViewController.h"
 
-@interface ViewController ()<TapLoginResultDelegate, TapMomentDelegate, TapUserStatusChangedDelegate>
+@interface ViewController ()<TapMomentDelegate>
 
 @end
 
@@ -37,9 +37,9 @@
 
     UIButton *profileButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 250, 300, 50)];
     profileButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [profileButton setTitle:@"获取用户最新信息" forState:UIControlStateNormal];
+    [profileButton setTitle:@"登陆状态" forState:UIControlStateNormal];
     [profileButton setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
-    [profileButton addTarget:self action:@selector(fetchProfile:) forControlEvents:UIControlEventTouchUpInside];
+    [profileButton addTarget:self action:@selector(checkLoginStatus:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:profileButton];
 
     UIButton *momentButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 350, 100, 50)];
@@ -72,8 +72,11 @@
     
     //初始化SDK
     TapConfig *config = TapConfig.new;
-    config.clientId = @"BL1SbiKHHGGmivSEe8";
-    config.clientSecret=@"NQDo7btXA6ZXmXNaMM3SvqOiicV5OKtqlHYzDxyL";
+    config.clientId = @"Client ID";
+    config.clientToken=@"Client Token";
+    config.region = TapSDKRegionTypeCN;
+    config.serverURL = @"Server URL";
+    [TapBootstrap initWithConfig:config];
     
     TapDBConfig * dbConfig = [[TapDBConfig alloc]init];
     
@@ -85,9 +88,6 @@
     
     config.region = TapSDKRegionTypeCN;
     [TapBootstrap initWithConfig:config];
-    //设置登录回调
-    [TapBootstrap registerLoginResultDelegate:self];
-    [TapBootstrap registerUserStatusChangedDelegate:self];
     
     //开启动态
     [TapMoment setDelegate:self];
@@ -99,59 +99,41 @@
  登录
  */
 - (void)taptapLogin:(UIButton *)button {
-    TapBootstrapLoginType loginType = TapBootstrapLoginTypeTapTap;
-    [TapBootstrap login:(loginType) permissions:@[@"public_profile"]];
+    [TDSUser loginByTapTapWithPermissions:@[@"public_profile"] callback:^(TDSUser * _Nullable user, NSError * _Nullable error) {
+        if (user) {
+            // 开发者可以调用 user 的方法获取更多属性。
+            NSString *userId = user.objectId;  // 用户唯一标识
+            NSString *username = user[@"nickname"];  // 昵称
+            NSString *avatar = user[@"avatar"];  // 头像
+            NSLog(@"userId: %@, username: %@, avatar: %@", userId, username, avatar);
+        } else {
+            NSLog(@"%@", error);
+        }
+    }];
+}
+
+
+/**
+ 判定登陆状态
+ */
+- (void)checkLoginStatus:(UIButton *)button {
+    TDSUser *currentUser = [TDSUser currentUser];
+    if (currentUser == nil) {
+        // 未登录
+        NSLog(@"登陆状态：未登陆");
+    } else {
+        // 已登录
+        NSLog(@"登陆状态：已登陆");
+    }
 }
 
 /**
  登出
  */
 - (void)taptapLogout:(UIButton *)button {
-    [TapBootstrap logout];
+    [TDSUser logOut];
 }
 
-/**
- 获取用户信息
- */
-- (void)fetchProfile:(UIButton *)button {
-    [TapBootstrap getUserDetails:^(TapUserDetails *_Nullable userDetail, NSError *_Nullable error) {
-        if (error) {
-            NSLog(@"获取用户信息失败 %@", error);
-        } else {
-            NSLog(@"获取用户信息成功 %@", userDetail.name);
-        }
-    }];
-}
-
-#pragma mark - TapBootstrap
-// 实现回调方法
-// 登录成功回调
-// @param token token 对象
-- (void)onLoginSuccess:(AccessToken *)token{
-    NSLog (@"onLoginSuccess");
-    [self.view makeToast:@"登录成功"];
-}
-
-// 登录取消
-- (void)onLoginCancel{
-    NSLog (@"onLoginCancel");
-    [self.view makeToast:@"登录成功"];
-}
-
-// 登录失败
-// @param error 失败原因
-- (void)onLoginError:(NSError *)error{
-    NSLog (@"onLoginError");
-}
-
-- (void)onLogout:(NSError *)error{
-    NSLog (@"onLogout");
-}
-
-// 如果是因为出错导致的退登，则返回错误信息
-- (void)onBind:(NSError *)error{
-    NSLog (@"onBind");
-}
 
 #pragma mark - 动态相关
 /**

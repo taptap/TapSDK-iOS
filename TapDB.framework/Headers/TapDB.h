@@ -22,10 +22,10 @@ FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypeTwitter;
 FOUNDATION_EXPORT TapDBLoginType const TapDBLoginTypePhoneNumber;
 
 #define TapDBSDK               @"TapDB"
-#define TapDBSDK_VERSION_NUMBER @"20106001"
-#define TapDBSDK_VERSION        @"2.1.6"
+#define TapDBSDK_VERSION_NUMBER @"30000001"
+#define TapDBSDK_VERSION        @"3.0.0"
 //版本号
-static NSString *const TAPDB_VERSION = @"3.0.4";
+static NSString *const TAPDB_VERSION = @"3.0.6";
 
 @interface TapDB : NSObject
 /**
@@ -66,6 +66,7 @@ static NSString *const TAPDB_VERSION = @"3.0.4";
 
 //sm
 + (void)onStartWithClientId:(NSString *)clientId channel:(nullable NSString *)channel version:(nullable NSString *)gameVersion isCN:(BOOL)isCN;
+
 /**
  * 初始化，尽早调用
  * clientId: TapTap登录sdk后台页面 client id
@@ -80,12 +81,12 @@ static NSString *const TAPDB_VERSION = @"3.0.4";
 + (void)setUser:(NSString *)userId properties:(nullable NSDictionary *)properties;
 /// 对外隐藏接口
 + (void)setUser:(NSString *)userId loginType:(TapDBLoginType)loginType;
+
 /// 记录一个用户（不是游戏角色！！！！），需要保证唯一性
 /// @param userId 用户ID。不同用户需要保证ID的唯一性
 /// @param loginType 登录方式
 /// @param properties 自定义属性
 + (void)setUser:(NSString *)userId loginType:(TapDBLoginType)loginType properties:(nullable NSDictionary *)properties;
-
 
 /**
  登出清理用户
@@ -116,6 +117,8 @@ static NSString *const TAPDB_VERSION = @"3.0.4";
 /// @param name 必传，长度大于0并小于等于256，用户名
 + (void)setName:(NSString *)name;
 
++ (void)onChargeSuccess:(nullable NSString *)orderId product:(nullable NSString *)product amount:(NSInteger)amount currencyType:(nullable NSString *)currencyType payment:(nullable NSString *)payment;
+
 /**
  * 充值成功时调用
  * orderId: 订单ID，可为空
@@ -123,9 +126,9 @@ static NSString *const TAPDB_VERSION = @"3.0.4";
  * amount: 充值金额（单位分，即无论什么币种，都需要乘以100）
  * currencyType: 货币类型，可为空，参考：人民币 CNY，美元 USD；欧元 EUR
  * payment: 支付方式，可为空，如：支付宝
+ * properties: 事件属性，需要在控制后台预先进行配置,值为长度大于0并小于等于256的字符串或绝对值小于1E11的浮点数
  */
-+ (void)onChargeSuccess:(nullable NSString *)orderId product:(nullable NSString *)product amount:(NSInteger)amount currencyType:(nullable NSString *)currencyType payment:(nullable NSString *)payment;
-
++ (void)onChargeSuccess:(nullable NSString *)orderId product:(nullable NSString *)product amount:(NSInteger)amount currencyType:(nullable NSString *)currencyType payment:(nullable NSString *)payment properties:(nullable NSDictionary *)properties;
 /**
  * 自定义事件
  * eventName: 事件代码，需要在控制后台预先进行配置
