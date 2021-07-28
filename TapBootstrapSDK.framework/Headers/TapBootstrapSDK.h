@@ -18,9 +18,4 @@ FOUNDATION_EXPORT const unsigned char TapBootstrapSDKVersionString[];
 
 #import <TapBootstrapSDK/TapBootstrap.h>
 #import <TapBootstrapSDK/TapSDKConstants.h>
-#import <TapBootstrapSDK/AccessToken.h>
-#import <TapBootstrapSDK/TapUser.h>
-#import <TapBootstrapSDK/TapUserDetails.h>
-#import <TapBootstrapSDK/TapUserCenterEntry.h>
-#import <TapBootstrapSDK/TapLoginResultDelegate.h>
-#import <TapBootstrapSDK/TapUserStatusChangedDelegate.h>
+#import <TapBootstrapSDK/TDSUser.h>
