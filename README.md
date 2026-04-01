@@ -22,21 +22,6 @@
 **[接入文档](https://developer.taptap.cn/docs/v3/sdk/)**
 
 
-## 接入方式
-
-### 1. 下载 framework 和 bundle 文件
-
-在 Xcode 工程中添加下载的 `*.framework`静态库，注意添加时选择 Embed 方式为 Do Not Embed，导入下载的 `*.bundle` 资源文件
-
-### 2. 配置工程
-
-* 在 Build Setting 中的 Other Link Flag 中添加 -ObjC
-
-* 在工程中添加 libz.1.tbd 和 libc++.tbd 依赖
-
-如 SDK 依赖其他库，请根据文档额外添加依赖。
-
-
 ## 支持与反馈
 
 如有问题或需求，请通过以下方式联系我们：
