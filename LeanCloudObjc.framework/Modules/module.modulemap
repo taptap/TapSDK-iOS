@@ -1,6 +1,0 @@
-framework module LeanCloudObjc {
-  umbrella header "LeanCloudObjc.h"
-
-  export *
-  module * { export * }
-}
